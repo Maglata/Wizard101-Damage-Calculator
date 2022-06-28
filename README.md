@@ -1,4 +1,4 @@
-# Wizard101-Damage-Calculator
+# Wizard101 Damage Calculator
 
 Heya this is a Coursework for my University which I made and thought that people would have a use of it(Also it's my first project as a whole)
 
