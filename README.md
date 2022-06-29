@@ -4,13 +4,13 @@ Heya this is a Coursework for my University which I made and thought that people
 
 The program allows the user to easily add any kind of Damage Modificators(Blades and Shields) so that they can quickly calculate what the damage output can be
 
-The Program itself was required to include: 
+## The Program itself was required to include: 
 - All 4 parts of OOP(Abstraction, Encpsulation, Polymorphism and Inheritance)
 - LINQ
 - Serialization 
 - And Windows Forms
 
-The Program includes:
+## The Program includes:
 - All the forementioned things
 - A "UI" that allows the user to quickly add Damage Modificators in the queue
 - The Calculation and Pierce mechanics of the game
