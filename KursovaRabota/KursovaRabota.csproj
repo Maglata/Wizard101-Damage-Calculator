@@ -4,7 +4,12 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>6292568-middle-removebg-preview.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="6292568-middle-removebg-preview.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\KursovaLibrary\KursovaLibrary.csproj" />

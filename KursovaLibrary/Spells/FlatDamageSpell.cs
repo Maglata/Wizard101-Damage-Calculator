@@ -25,7 +25,7 @@ namespace KursovaLibrary
 
             _dm.Reverse();
 
-            return $"Your Damage will be: {(int)BaseDamage}. And {(int)BaseDamage * Critical} if it Crits.";
+            return $"Your Damage will be: {(int)BaseDamage}. And {(int)(BaseDamage * Critical)} if it Crits.";
         }
 
     }

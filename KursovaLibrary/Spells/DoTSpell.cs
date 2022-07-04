@@ -30,7 +30,7 @@ namespace KursovaLibrary
 
             _dm.Reverse();
 
-            return $"Your Damage will be: {(int)BaseDamage} + {(int)DoT} overtime. And {(int)BaseDamage*Critical} + {(int)DoT*Critical} overtime if it Crits.";
+            return $"Your Damage will be: {(int)BaseDamage} + {(int)DoT} overtime. And {(int)(BaseDamage*Critical)} + {(int)(DoT*Critical)} overtime if it Crits.";
         }
     }
 }

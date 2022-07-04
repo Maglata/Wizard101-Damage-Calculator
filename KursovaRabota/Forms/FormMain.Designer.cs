@@ -687,7 +687,7 @@ namespace KursovaRabota
             this.textBoxCritical.Name = "textBoxCritical";
             this.textBoxCritical.Size = new System.Drawing.Size(84, 23);
             this.textBoxCritical.TabIndex = 54;
-            this.textBoxCritical.Text = "1.00";
+            this.textBoxCritical.Text = "1,00";
             // 
             // labelCritical
             // 

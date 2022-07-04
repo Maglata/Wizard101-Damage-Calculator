@@ -27,7 +27,7 @@ namespace KursovaLibrary
 
             _dm.Reverse();
 
-            return $"Your Damage will be between: {(int)BaseDamage} and {(int)MaxDamage}. And between {(int)BaseDamage * Critical} and {(int)MaxDamage * Critical} if it Crits.";
+            return $"Your Damage will be between: {(int)BaseDamage} and {(int)MaxDamage}. And between {(int)(BaseDamage * Critical)} and {(int)(MaxDamage * Critical)} if it Crits.";
         }
     }
 }

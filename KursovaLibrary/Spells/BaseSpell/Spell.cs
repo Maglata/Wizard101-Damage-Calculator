@@ -14,43 +14,47 @@ namespace KursovaLibrary
         {
             if (pierce > 0)
             {
-                if (_dm.Any(s => s is Shield))
+                var _tempdm = new List<DamageModificator>(_dm);
+
+                if (_tempdm.Any(s => s is Shield))
                 {
-                    double maxshield = Math.Round(_dm
+                    
+
+                    double maxshield = Math.Round(_tempdm
                                     .Where(s => s is Shield)
                                     .Min(s => s.Damage), 2);
 
-                    var shieldtoremove = _dm
+                    var shieldtoremove = _tempdm
                         .Where(s => s is Shield)
-                        .Single(s => s.Damage == maxshield);
+                        .First(s => s.Damage == maxshield);
 
-                    _dm.Remove(shieldtoremove);
+                    _tempdm.Remove(shieldtoremove);                 
 
                     // Recursion :(
                     if (pierce - (100 - (maxshield * 100)) > 0)
                     {
-                        return CheckPierce(pierce - (100 - maxshield * 100), resist, _dm);
+                        return CheckPierce(pierce - (100 - maxshield * 100), resist, _tempdm);
                     }
                     else
                     {
-                        _dm.Add(new Shield { Damage = Math.Round(Math.Abs(pierce - (100 - maxshield * 100))) });
-                        return _dm;
+                        _tempdm.Add(new Shield { Damage = Math.Round(Math.Abs(pierce - (100 - maxshield * 100))) });
+                        return _tempdm;
                     }
                 }
                 else if(resist > 0)
                 {
                     if (pierce - resist > 0)
                     {
-                        return _dm;
+                        return _tempdm;
                     }
                     else
                     {
-                        _dm.Add(new Shield { Damage = Math.Abs(pierce - resist) });
-                        return _dm;
+                        _tempdm.Add(new Shield { Damage = Math.Abs(pierce - resist) });
+                        return _tempdm;
                     }
                 }
                 else
-                    return _dm;
+                    return _tempdm;
                 
             }
             else
