@@ -228,7 +228,7 @@ namespace KursovaRabota
             }
             catch (FormatException)
             {
-                MessageBox.Show("Incorrect input format detected. Please put in only whole positive numbers or positive numbers above 1,00 for Critical.", "Invalid Input");
+                MessageBox.Show("Incorrect input format detected. Please put in only whole positive numbers or positive numbers above 1.00 for Critical.", "Invalid Input");
             }
             
         }
