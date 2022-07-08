@@ -727,6 +727,7 @@ namespace KursovaRabota
             }
         }
         
+        // Saves Data upon Closing
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             SaveData();
