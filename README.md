@@ -4,6 +4,10 @@ Heya this is a Coursework for my University which I made and thought that people
 
 The program allows the user to easily add any kind of Damage Modificators(Blades and Shields) so that they can quickly calculate what the damage output can be
 
+## Installation Guide
+- Download the .zip file from the release tab
+- Launch Wizard101Calculator.exe (The file size is bigger because .NET is bundled with it)
+
 ## The Program itself was required to include: 
 - All 4 parts of OOP(Abstraction, Encpsulation, Polymorphism and Inheritance)
 - LINQ
